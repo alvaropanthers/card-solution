@@ -1,0 +1,34 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.tile{
+    margin-top: 20px;
+    position: relative;
+    height: 200px;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.tile-an{
+    transform: rotateY(180deg);
+}
+
+.tile-front{
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.05);
+    backface-visibility: hidden;
+}
+
+.tile-back{
+    position: absolute;
+    box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.05);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card-footer{
+    background-color: white;
+}
